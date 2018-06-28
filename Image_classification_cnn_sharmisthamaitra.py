@@ -11,24 +11,24 @@ import pickle
 
 
 ##Create a folder cifar-10 under working directory
-#CIFAR_10_FILE_NAME = 'cifar-10/cifar-10-python.tar.gz'
+CIFAR_10_FILE_NAME = 'cifar-10/cifar-10-python.tar.gz'
 
 
 
 #CIFAR-10 contains 60,000 color images of animals and inanimate objects, total 10 categories. Each image is 32 x 32 pixels, 3 channels (RGB).
-#urllib.request.urlretrieve('https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz', CIFAR_10_FILE_NAME)
+urllib.request.urlretrieve('https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz', CIFAR_10_FILE_NAME)
 
 
 #Extract cifar-10-python.tar.gz into cifar-10 folder, under working directory. 
-#import tarfile
-#with tarfile.open('cifar-10/cifar-10-python.tar.gz') as tar:
-#   tar.extractall()
-#   tar.close()
+import tarfile
+with tarfile.open('cifar-10/cifar-10-python.tar.gz') as tar:
+   tar.extractall()
+   tar.close()
     
 
 
 #The tar.gz file will be extracted into 5 batches for training and 1 batch for tesing into cifar-10-batches-py folder under working directory
-#CIFAR10_DATASET_FOLDER = "cifar-10-batches-py"
+CIFAR10_DATASET_FOLDER = "cifar-10-batches-py"
 
 
 
